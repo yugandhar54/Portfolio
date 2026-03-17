@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hanumanthu Yugandhar – CS & Data Science Student Portfolio" />
+    <title>Hanumanthu Yugandhar | Portfolio</title>
+
+    <!-- Google Fonts: Playfair Display (headings) + Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Three.js (required by Vanta) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <!-- p5.js (required by Vanta Topology) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <!-- Vanta Topology -->
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+
+<body>
+
+    <!--
+    ╔══════════════════════════════════════════════╗
+    ║  CSS-ONLY HAMBURGER TOGGLE                   ║
+    ╚══════════════════════════════════════════════╝
+  -->
+    <input type="checkbox" id="nav-toggle" class="nav-checkbox" />
+
+    <!-- ═══════════════════════════════════
+       NAVIGATION BAR
+  ════════════════════════════════════ -->
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Hanumanthu Yugandhar<span class="logo-bracket">/&gt;</span>
+            </a>
+            <!-- Hamburger label (CSS-only toggle) -->
+            <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </label>
+
+            <!-- Nav links -->
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════════ -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="hero-eyebrow">AVAILABLE FOR OPPORTUNITIES &middot; INDIA</p>
+            <h1 class="hero-name">
+                Hanumanthu<br>
+                <span class="gradient-text">Yugandhar</span>
+            </h1>
+            <p class="hero-description">
+                CS &amp; Data Science Student &mdash; building intelligent systems,
+                elegant web experiences, and turning data into insights.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">VIEW PROJECTS &darr;</a>
+                <a href="https://drive.google.com/file/d/1awmfHrRCQuQNROhhNQ5dQ9W-H4GbDdmU/view?usp=sharing" target="_blank" class="btn btn-primary">DOWNLOAD CV &darr;</a>
+                <a href="#contact" class="btn btn-text-link">LET'S CONNECT &rarr;</a>
+            </div>
+        </div>
+        <div class="marquee-wrapper">
+            <div class="marquee-track">
+                <span>PYTHON</span><span class="mq-sep">+</span>
+                <span>JAVA</span><span class="mq-sep">+</span>
+                <span>C++</span><span class="mq-sep">+</span>
+                <span>SPRING BOOT</span><span class="mq-sep">+</span>
+                <span>REACT</span><span class="mq-sep">+</span>
+                <span>HTML5</span><span class="mq-sep">+</span>
+                <span>CSS3</span><span class="mq-sep">+</span>
+                <span>JAVASCRIPT</span><span class="mq-sep">+</span>
+                <span>MYSQL</span><span class="mq-sep">+</span>
+                <span>MONGODB</span><span class="mq-sep">+</span>
+                <span>GIT</span><span class="mq-sep">+</span>
+                <span>TENSORFLOW</span><span class="mq-sep">+</span>
+                <span>PYTHON</span><span class="mq-sep">+</span>
+                <span>JAVA</span><span class="mq-sep">+</span>
+                <span>C++</span><span class="mq-sep">+</span>
+                <span>SPRING BOOT</span><span class="mq-sep">+</span>
+                <span>REACT</span><span class="mq-sep">+</span>
+                <span>HTML5</span><span class="mq-sep">+</span>
+                <span>CSS3</span><span class="mq-sep">+</span>
+                <span>JAVASCRIPT</span><span class="mq-sep">+</span>
+                <span>MYSQL</span><span class="mq-sep">+</span>
+                <span>MONGODB</span><span class="mq-sep">+</span>
+                <span>GIT</span><span class="mq-sep">+</span>
+                <span>TENSORFLOW</span><span class="mq-sep">+</span>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down" aria-label="Scroll down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ═══════════════════════════════════
+       ABOUT SECTION
+  ════════════════════════════════════ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">Who am I?</p>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <!-- Profile Image -->
+                <div class="about-image-wrapper">
+                    <div class="about-image-frame">
+                        <div class="profile-placeholder">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="image-ring ring-1"></div>
+                        <div class="image-ring ring-2"></div>
+                    </div>
+                    <div class="exp-badge">
+                        <span class="badge-label">Available for Opportunities</span>
+                    </div>
+                </div>
+
+                <!-- About Text -->
+                <div class="about-text">
+                    <h3>Computer Science &amp; Data Science Student</h3>
+                    <p>
+                        I'm a passionate CS &amp; Data Science student with a strong foundation in Data structures and
+                        Algorithms,
+                        and full-stack development. I enjoy crafting solutions that blend
+                        analytical thinking with creative engineering.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new datasets, contributing to open-source,
+                        or diving deep into research papers on AI and distributed systems.
+                    </p>
+
+                    <div class="about-info-grid">
+                        <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>India</span></div>
+                        <div class="info-item"><i class="fas fa-graduation-cap"></i><span>B.Tech CSE</span></div>
+                        <div class="info-item"><i class="fas fa-laptop-code"></i><span>Open to Internships</span></div>
+                        <div class="info-item"><i class="fas fa-language"></i><span>English, Hindi & Telugu</span></div>
+                    </div>
+
+                    <a href="https://drive.google.com/file/d/1awmfHrRCQuQNROhhNQ5dQ9W-H4GbDdmU/view?usp=sharing"
+                        target="_blank" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="tech-stack">
+                <p class="stack-label">Tech I work with:</p>
+                <div class="tech-icons">
+                    <div class="tech-icon"><i class="fab fa-python"></i><span>Python</span></div>
+                    <div class="tech-icon"><i class="fab fa-java"></i><span>Java</span></div>
+                    <div class="tech-icon"><i class="fas fa-code"></i><span>C++</span></div>
+                    <div class="tech-icon"><i class="fab fa-html5"></i><span>HTML5</span></div>
+                    <div class="tech-icon"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+                    <div class="tech-icon"><i class="fab fa-js-square"></i><span>JS</span></div>
+                    <div class="tech-icon"><i class="fab fa-react"></i><span>React</span></div>
+                    <div class="tech-icon"><i class="fas fa-leaf"></i><span>Spring Boot</span></div>
+                    <div class="tech-icon"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                    <div class="tech-icon"><i class="fas fa-database"></i><span>SQL</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+       SKILLS SECTION
+  ════════════════════════════════════ -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">Techinal Arsenal</p>
+                <h2 class="section-title"><span class="gradient-text">Skills</span></h2>
+            </div>
+
+            <div class="skills-bordered-grid">
+
+                <div class="skill-cell fade-in-up">
+                    <h3 class="skill-cell-title">PROGRAMMING</h3>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-cell fade-in-up">
+                    <h3 class="skill-cell-title">WEB DEVELOPMENT</h3>
+                    <ul class="skill-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Spring Boot</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+
+                <div class="skill-cell fade-in-up">
+                    <h3 class="skill-cell-title">DATA SCIENCE &amp; ML</h3>
+                    <ul class="skill-list">
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                        <li>Scikit-learn</li>
+                        <li>TensorFlow</li>
+                        <li>Matplotlib</li>
+                    </ul>
+                </div>
+
+                <div class="skill-cell fade-in-up">
+                    <h3 class="skill-cell-title">TOOLS &amp; DATABASES</h3>
+                    <ul class="skill-list">
+                        <li>Git &amp; GitHub</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>VS Code</li>
+                        <li>Jupyter</li>
+                        <li>Power BI</li>
+                        <li>Unreal Engine</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+       PROJECTS SECTION
+  ════════════════════════════════════ -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">What I've built</p>
+                <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <div class="project-card fade-in-up">
+                    <span class="project-num">01</span>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JAVA</span>
+                        <span class="project-tag">JAVASCRIPT</span>
+                        <span class="project-tag">SPRING BOOT</span>
+                    </div>
+                    <h3 class="project-title">GitHub README Profile Builder</h3>
+                    <p class="project-summary">An interactive tool to build and customize your GitHub profile README with live preview and instant markdown generation.</p>
+                    <ul class="project-bullets">
+                        <li>Interactive drag-and-drop section builder</li>
+                        <li>Live preview with real-time markdown output</li>
+                        <li>Multiple themes and badge customization options</li>
+                    </ul>
+                    <div class="project-footer">
+                        <a href="https://github.com/yugandhar54/GitHub-Readme.md-Profiile-Builder" target="_blank" class="project-github-link">VIEW ON GITHUB &#x2197;</a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in-up">
+                    <span class="project-num">02</span>
+                    <div class="project-tags">
+                        <span class="project-tag">C++</span>
+                        <span class="project-tag">DATA STRUCTURES</span>
+                    </div>
+                    <h3 class="project-title">Hospital Patient Record System</h3>
+                    <p class="project-summary">A full-stack hospital management system for managing patient records, appointments, and medical histories.</p>
+                    <ul class="project-bullets">
+                        <li>Secure role-based access control (admin, doctor, patient)</li>
+                        <li>Real-time appointment scheduling and conflict detection</li>
+                        <li>Comprehensive medical history and prescription tracking</li>
+                    </ul>
+                    <div class="project-footer">
+                        <a href="https://github.com/yugandhar54/Hospital-Patient-Record-System" target="_blank" class="project-github-link">VIEW ON GITHUB &#x2197;</a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in-up">
+                    <span class="project-num">03</span>
+                    <div class="project-tags">
+                        <span class="project-tag">PYTHON</span>
+                        <span class="project-tag">AI</span>
+                        <span class="project-tag">IOT</span>
+                    </div>
+                    <h3 class="project-title">Voice-Controlled Assistant</h3>
+                    <p class="project-summary">An AI-powered voice assistant that controls home devices using speech recognition and natural language processing.</p>
+                    <ul class="project-bullets">
+                        <li>Real-time speech-to-command pipeline with NLP</li>
+                        <li>Smart home device integration via IoT protocols</li>
+                        <li>Context-aware conversation and command memory</li>
+                    </ul>
+                    <div class="project-footer">
+                        <a href="https://github.com/yugandhar54/AI_project" target="_blank" class="project-github-link">VIEW ON GITHUB &#x2197;</a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in-up">
+                    <span class="project-num">04</span>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JAVASCRIPT</span>
+                    </div>
+                    <h3 class="project-title">Restaurant Reservation &amp; Table Management</h3>
+                    <p class="project-summary">A complete restaurant management system with online reservations and real-time table availability tracking.</p>
+                    <ul class="project-bullets">
+                        <li>Online table reservation with real-time availability</li>
+                        <li>Automated booking confirmation and reminder system</li>
+                        <li>Admin dashboard for floor-plan and capacity management</li>
+                    </ul>
+                    <div class="project-footer">
+                        <a href="https://github.com/yugandhar54/Restaurant-reservation-and-table-management-" target="_blank" class="project-github-link">VIEW ON GITHUB &#x2197;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+       EDUCATION TIMELINE
+  ════════════════════════════════════ -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">Acadamic Background</p>
+                <h2 class="section-title"><span class="gradient-text">Education</span></h2>
+            </div>
+
+            <div class="edu-grid">
+
+                <div class="edu-card fade-in-up">
+                    <span class="edu-date">2023 &mdash; 2027</span>
+                    <h3 class="edu-degree">B.TECH &mdash; COMPUTER SCIENCE &amp; ENGINEERING</h3>
+                    <p class="edu-institution">Lovely Professional University</p>
+                    <p class="edu-location">Jalandhar, Punjab, India</p>
+                    <p class="edu-desc">Specialization in Data Science &amp; AI. Coursework: DSA, DBMS, ML, OS, Computer Networks.</p>
+                    <div class="edu-meta">
+                        <span class="edu-badge">CGPA: 7.5</span>
+                        <span class="timeline-badge education-badge">Education</span>
+                    </div>
+                </div>
+
+                <div class="edu-card fade-in-up">
+                    <span class="edu-date">2021 &mdash; 2023</span>
+                    <h3 class="edu-degree">INTERMEDIATE (MPC) &mdash; 12TH GRADE</h3>
+                    <p class="edu-institution">Narayana Junior College</p>
+                    <p class="edu-location">Visakhapatnam, Andhra Pradesh</p>
+                    <p class="edu-desc">Maths, Physics, Chemistry stream. Member of the Science Club.</p>
+                    <div class="edu-meta">
+                        <span class="edu-badge">90%</span>
+                        <span class="timeline-badge education-badge">Education</span>
+                    </div>
+                </div>
+
+                <div class="edu-card fade-in-up">
+                    <span class="edu-date">2020 &mdash; 2021</span>
+                    <h3 class="edu-degree">SSC &mdash; 10TH GRADE</h3>
+                    <p class="edu-institution">Shree Chaitanya English Medium School</p>
+                    <p class="edu-location">Visakhapatnam, Andhra Pradesh</p>
+                    <p class="edu-desc">Secondary School Certificate. Strong foundation in core sciences and mathematics.</p>
+                    <div class="edu-meta">
+                        <span class="edu-badge">100%</span>
+                        <span class="timeline-badge education-badge">Education</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+       CERTIFICATES SECTION
+  ════════════════════════════════════ -->
+    <section class="section certificates" id="certificates">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">Achievements & Extra Curricular activities</p>
+                <h2 class="section-title"><span class="gradient-text">Certificates</span></h2>
+            </div>
+
+            <div class="cert-grid">
+
+                <div class="cert-card fade-in-up">
+                    <a href="Introduction to Internet of things Certificate.png" target="_blank" class="cert-link">
+                        <div class="cert-image">
+                            <img src="Introduction to Internet of things Certificate.png" alt="Certificate 1" />
+                        </div>
+                    </a>
+                    <h3 class="cert-title">Introduction to Internet of Things</h3>
+                    <p class="cert-issuer">Issued by · National Programme on Technology Enhanced Learning(NPTEL)</p>
+                    <p class="cert-date">Date Issued: October 2025</p>
+                </div>
+
+                <div class="cert-card fade-in-up">
+                    <a href="Chatgpt-4 Prompt.png" target="_blank" class="cert-link">
+                        <div class="cert-image">
+                            <img src="Chatgpt-4 Prompt.png" alt="Certificate 2" />
+                        </div>
+                    </a>
+                    <h3 class="cert-title">ChatGPT-4 Prompt Engineering: ChatGPT,Generative AI & ML</h3>
+                    <p class="cert-issuer">Issued by · Infosys SpringBoard</p>
+                    <p class="cert-date">Date Issued: August 2025</p>
+                </div>
+
+                <div class="cert-card fade-in-up">
+                    <a href="ngo certificate.jpg" target="_blank" class="cert-link">
+                        <div class="cert-image">
+                            <img src="ngo certificate.jpg" alt="Certificate 2" />
+                        </div>
+                    </a>
+                    <h3 class="cert-title">NGO Volunteer Certificate</h3>
+                    <p class="cert-issuer">Issued by · Talent Origin Seva Sangam NGO</p>
+                    <p class="cert-date">Date Issued: July 2024</p>
+                </div>
+
+                <div class="cert-card fade-in-up">
+                    <a href="Code-A-Haunt.png" target="_blank" class="cert-link">
+                        <div class="cert-image">
+                            <img src="Code-A-Haunt.png" alt="Certificate 2" />
+                        </div>
+                    </a>
+                    <h3 class="cert-title">Code-A-Haunt Hackathon</h3>
+                    <p class="cert-issuer">Issued by · CodingBlocks</p>
+                    <p class="cert-date">Date Issued: March 2024</p>
+                </div>
+
+                <div class="cert-card fade-in-up">
+                    <a href="Python.png" target="_blank" class="cert-link">
+                        <div class="cert-image">
+                            <img src="Python.png" alt="Certificate 3" />
+                        </div>
+                    </a>
+                    <h3 class="cert-title">Python Programming</h3>
+                    <p class="cert-issuer">Issued by · Infosys SpringBoard</p>
+                    <p class="cert-date">Date Issued: February 2023</p>
+                </div>
+
+                <div class="cert-card fade-in-up">
+                    <a href="FreeCodeCamp.png" target="_blank" class="cert-link">
+                        <div class="cert-image">
+                            <img src="FreeCodeCamp.png" alt="Certificate 3" />
+                        </div>
+                    </a>
+                    <h3 class="cert-title">Responsive Web Design</h3>
+                    <p class="cert-issuer">Issued by · FreeCodeCamp</p>
+                    <p class="cert-date">Date Issued: September 2023</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+       CONTACT SECTION
+  ════════════════════════════════════ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">Get in touch</p>
+                <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+            </div>
+
+            <div class="contact-grid">
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <p class="contact-eyebrow">LET'S WORK TOGETHER</p>
+                    <h3 class="contact-headline">GOT AN<br><span class="gradient-text">IDEA?</span><br>LET'S BUILD IT.</h3>
+                    <p>
+                        Whether you're looking for a passionate intern, have an exciting project idea,
+                        or just want to say hello &mdash; my inbox is always open.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <p class="contact-label">Phone</p>
+                                <a href="tel:+917981675974">+91 7981675974</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <a href="mailto:yugandharchandu54@gmail.com">yugandharchandu54@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-github"></i></div>
+                            <div>
+                                <p class="contact-label">GitHub</p>
+                                <a href="https://github.com/yugandhar54" target="_blank">github.com/yugandhar54</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                            <div>
+                                <p class="contact-label">LinkedIn</p>
+                                <a href="https://www.linkedin.com/in/hanumanthuyugandhar/"
+                                    target="_blank">linkedin.com/in/hanumanthuyugandhar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/" target="_blank" class="social-btn"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/" target="_blank" class="social-btn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/" target="_blank" class="social-btn"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="mailto:yugandharchandu54@gmail.com" class="social-btn"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form (HTML-only, no JS handling) -->
+                <form class="contact-form glass-card" action="https://formspree.io/f/xwvrrqjj" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="your@email.com"
+                                required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-tag"></i>
+                            <input type="text" id="subject" name="subject" placeholder="Project Collaboration"
+                                required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <div class="input-wrapper textarea-wrapper">
+                            <i class="fas fa-comment"></i>
+                            <textarea id="message" name="message" rows="5" placeholder="Let's talk about…"
+                                required></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Redirect to a thank-you page after successful submission -->
+                    <input type="hidden" name="_next" value="https://yugandhar54.github.io/thank-you" />
+                    <input type="hidden" name="_subject" value="New message from portfolio contact form" />
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+       FOOTER
+  ════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <a href="#home" class="nav-logo footer-logo">
+                    <span class="logo-bracket">&lt;</span>HY<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-tagline">Building the future, one line of code at a time.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/yugandhar54" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="mailto:yugandharchandu54@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 <strong>Hanumanthu Yugandhar</strong>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Vanta Topology initialisation -->
+    <script>
+        VANTA.TOPOLOGY({
+            el: "#home",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200,
+            minWidth: 200,
+            scale: 1,
+            scaleMobile: 1,
+            color: 0xc2d96b,
+            backgroundColor: 0x0d2b2b
+        });
+    </script>
+    <!-- Scroll fade-in animation -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
